@@ -1,0 +1,36 @@
+############################################
+######    LaTeX Transformer v0.1.0    ######
+############################################
+
+Introduction
+------------
+LaTeX Transformer translates image of standardized math formulas into corresponding LaTeX code.
+
+Requirement
+------------
+We require the toolbox vlfeat-0.9.20. We provide it in our submission, please download from http://www.vlfeat.org/ and replace in case of any error.
+
+Setup
+------------
+Open the Matlab IDE and run setup.m in the command window. Please ignore any warning.
+
+Usage
+------------
+The function transform.m takes an image and returns a string of LaTeX code. (Please use imread to read the image first!)
+Example:
+im = imread("FILEPATH/FILENAME");
+latex_code = transform(im);
+
+Quick Run
+------------
+You can quickly test the functionality using the images we provide in the folder "test":
+Example:
+im = imread("test/test1.png");
+latex_code = transform(im);
+(Please ignore any warning.)
+
+Test Result Replication
+------------
+To replicate  the main result in our report, simply run test.m in the command window (after running setup.m). Note that the way we calculate the accuracy is by averaging score = (# correct symbols)/(total # symbols) of the test data. Please ignore any warning.
+
+

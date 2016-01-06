@@ -1,0 +1,19 @@
+disp('createLabels starts ...');
+% srcFiles = dir('train\*.PNG');
+% tLabels = cell(1,length(srcFiles));
+% for i = 1 : length(srcFiles)
+%     c = strsplit(srcFiles(i).name,'.');
+%     tLabels{i} = c(1);
+% end
+
+fid = fopen('fgets.m');
+
+tline = fgets(fid);
+i = 0;
+while ischar(tline)
+    tLabels{i}
+    tline = fgets(fid);
+    i = i+1;
+end
+
+fclose(fid);
